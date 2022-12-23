@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage ('Clone') {
-            steps {
-                git branch: 'PipelineTest', url: "https://github.com/DivyaParthasarathy/simple-java-maven-app.git"
-            }
-        }
 
         
         stage ('Exec Maven') {
